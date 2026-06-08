@@ -42,9 +42,9 @@
   --big-border: rgba(167, 139, 250, 0.3);
 
   /* Typography */
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Syne', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'IBM Plex Mono', monospace;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;  
 
   /* Layout */
   --radius-sm: 6px;
