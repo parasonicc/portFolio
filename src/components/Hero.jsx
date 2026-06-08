@@ -58,7 +58,7 @@ export default function Hero() {
         <div className={styles.avatarWrap}>
       <div className={styles.avatarRing} aria-hidden />
       <img
-       src="/public/paras.jpg"
+       src="/paras.JPG"
        alt="Paras Yadav"
        className={styles.avatar}
            />
