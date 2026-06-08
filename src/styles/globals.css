@@ -7,9 +7,9 @@
   --bg-subtle: #242424;
 
   /* Accent — warm amber/gold */
-  --accent: #341539;
-  --accent-dim: rgba(152, 21, 57, 0.3);
-  --accent-border: rgba(52, 21, 57, 0.6);
+  --accent: #b44fc1;
+  --accent-dim: rgba(180, 79, 193, 0.15);
+  --accent-border: rgba(180, 79, 193, 0.35);
 
   /* Text */
   --text-primary: #f0ece4;
