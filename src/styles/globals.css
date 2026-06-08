@@ -8,8 +8,8 @@
 
   /* Accent — warm amber/gold */
   --accent: #341539;
-  --accent-dim: rgba(167, 139, 250, 0.15);
-  --accent-border: rgba(167, 139, 250, 0.35);
+  --accent-dim: rgba(52, 21, 57, 0.3);
+  --accent-border: rgba(52, 21, 57, 0.6);
 
   /* Text */
   --text-primary: #f0ece4;
