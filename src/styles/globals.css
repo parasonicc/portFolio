@@ -42,9 +42,9 @@
   --big-border: rgba(167, 139, 250, 0.3);
 
   /* Typography */
-  --font-display: 'PT Sans', sans-serif;
+  --font-display: 'Roboto', sans-serif;
   --font-body: 'PT Sans', sans-serif;
-  --font-mono: 'PT Sans', sans-serif;
+  --font-mono: 'Roboto', sans-serif;
 
   /* Layout */
   --radius-sm: 6px;
