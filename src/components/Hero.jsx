@@ -56,9 +56,13 @@ export default function Hero() {
 
         {/* Avatar */}
         <div className={styles.avatarWrap}>
-          <div className={styles.avatarRing} aria-hidden />
-          <div className={styles.avatar}>{personalInfo.initials}</div>
-        </div>
+      <div className={styles.avatarRing} aria-hidden />
+      <img
+       src="/paras.jpg"
+       alt="Paras Yadav"
+       className={styles.avatar}
+           />
+      </div>
       </div>
 
       {/* Stats */}
