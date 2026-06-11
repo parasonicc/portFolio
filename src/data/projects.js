@@ -106,9 +106,9 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/churn/chart-1.png', caption: 'Model benchmarking — ROC curves' },
-        { src: '/evidence/churn/chart-2.png', caption: 'Feature importance — visit frequency dominates' },
-        { src: '/evidence/churn/chart-3.png', caption: 'Churner vs loyal customer behaviour' },
+        { src: '/evidence/churn/ROC.png', caption: 'Model benchmarking — ROC curves' },
+        { src: '/evidence/churn/featureimp.png', caption: 'Feature importance — visit frequency dominates' },
+        { src: '/evidence/churn/churnVSnonchurn.png', caption: 'Churner vs loyal customer behaviour' },
       ],
     },
   },
