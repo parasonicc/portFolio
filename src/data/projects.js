@@ -33,13 +33,30 @@ export const skills = [
   { name: 'Excel', icon: '📋', category: 'tool' },
 ];
 
+/*
+  ── EVIDENCE ──────────────────────────────────────────────────────────
+  Each project can have an `evidence` object:
+
+    evidence: {
+      reports: [{ label: 'Full report (PDF)', file: '/evidence/churn/report.pdf' }],
+      images: [{ src: '/evidence/churn/chart-1.png', caption: 'ROC curves' }],
+    }
+
+  Files live in the `public/` folder, so a file at
+  public/evidence/churn/report.pdf is referenced as /evidence/churn/report.pdf
+
+  → Rename the entries below to match YOUR actual filenames in public/.
+  Broken image paths are hidden automatically, but fix them anyway.
+  ──────────────────────────────────────────────────────────────────────
+*/
+
 export const projects = [
   {
     id: 'churn',
     title: 'Customer churn prediction — FoodCorp',
     category: 'ml',
     categoryLabel: 'Machine Learning',
-    module: 'BUSI4373 · Machine Learning & Predictive Analytics',
+    module: 'Machine Learning & Predictive Analytics',
     date: 'May 2026',
     description:
       'A temporal Random Forest pipeline to flag supermarket customers at risk of silently disengaging — before they stop coming. Deployed at 28-day intervals against a live customer base.',
@@ -58,13 +75,23 @@ export const projects = [
     ],
     tags: ['Random Forest', 'sklearn Pipeline', 'Temporal CV', 'Feature engineering', 'Python', 'Imbalanced data'],
     featured: true,
+    evidence: {
+      reports: [
+        { label: 'Full coursework report (PDF)', file: '/evidence/churn/report.pdf' },
+      ],
+      images: [
+        { src: '/evidence/churn/chart-1.png', caption: 'Model benchmarking — ROC curves' },
+        { src: '/evidence/churn/chart-2.png', caption: 'Feature importance' },
+        { src: '/evidence/churn/chart-3.png', caption: 'Churn behaviour over time' },
+      ],
+    },
   },
   {
     id: 'segmentation',
     title: 'Retail customer segmentation for data-driven marketing',
     category: 'seg',
     categoryLabel: 'Segmentation',
-    module: 'BUSI4370 · Analytics Specialisations & Applications',
+    module: 'Analytics Specialisations & Applications',
     date: 'Mar 2026',
     description:
       'Segmented 3,000 retail customers into 5 behavioural archetypes using RFM + category-spend features, enabling precision-targeted marketing campaigns.',
@@ -82,13 +109,22 @@ export const projects = [
     ],
     tags: ['K-Means', 'PCA', 'RFM', 'Unsupervised ML', 'Python'],
     featured: true,
+    evidence: {
+      reports: [
+        { label: 'Full coursework report (PDF)', file: '/evidence/segmentation/report.pdf' },
+      ],
+      images: [
+        { src: '/evidence/segmentation/chart-1.png', caption: 'PCA explained variance' },
+        { src: '/evidence/segmentation/chart-2.png', caption: 'Cluster visualisation' },
+      ],
+    },
   },
   {
     id: 'bank',
     title: 'Predictive modelling for bank marketing campaign response',
     category: 'ml',
     categoryLabel: 'Machine Learning',
-    module: 'BUSI4371 · Foundational Business Analytics',
+    module: 'Foundational Business Analytics',
     date: 'Jan 2026',
     description:
       'Predicted product subscription likelihood on a heavily imbalanced 4,000-record bank dataset, selecting the model that best surfaces genuine potential subscribers over noise.',
@@ -105,13 +141,22 @@ export const projects = [
     ],
     tags: ['Classification', 'Imbalanced data', 'Random Forest', 'sklearn', 'Python'],
     featured: false,
+    evidence: {
+      reports: [
+        { label: 'Full coursework report (PDF)', file: '/evidence/bank/report.pdf' },
+      ],
+      images: [
+        { src: '/evidence/bank/chart-1.png', caption: 'Model comparison' },
+        { src: '/evidence/bank/chart-2.png', caption: 'Confusion matrix — Random Forest' },
+      ],
+    },
   },
   {
     id: 'bluesky',
     title: 'Brand analytics on BlueSky: Ryanair vs Wizz Air',
     category: 'nlp',
     categoryLabel: 'NLP',
-    module: 'BUSI4370 · Analytics Specialisations & Applications',
+    module: 'Analytics Specialisations & Applications',
     date: 'Mar 2026',
     description:
       'End-to-end social listening pipeline for KantarIQ — from API collection to dual-engine sentiment, topic modelling, consumer perceptual mapping, and network-based influencer scoring.',
@@ -128,13 +173,23 @@ export const projects = [
     ],
     tags: ['NLP', 'VADER', 'BERTopic', 'LDA', 'Network analysis', 'API scraping'],
     featured: true,
+    evidence: {
+      reports: [
+        { label: 'Full coursework report (PDF)', file: '/evidence/bluesky/report.pdf' },
+      ],
+      images: [
+        { src: '/evidence/bluesky/chart-1.png', caption: 'Sentiment over time — Ryanair vs Wizz Air' },
+        { src: '/evidence/bluesky/chart-2.png', caption: 'Perceptual map (TF-IDF / PCA)' },
+        { src: '/evidence/bluesky/chart-3.png', caption: 'Influencer network graph' },
+      ],
+    },
   },
   {
     id: 'tableau',
     title: 'Retail store performance analytics dashboard',
     category: 'viz',
     categoryLabel: 'Visualisation',
-    module: 'BUSI4369 · Data at Scale',
+    module: 'Data at Scale',
     date: 'Dec 2025',
     description:
       'Multi-KPI Tableau dashboard analysing revenue, basket value, and customer behaviour across 4 retail stores. Individual analysis contributed to the group final investment recommendation.',
@@ -151,13 +206,22 @@ export const projects = [
     ],
     tags: ['Tableau', 'KPI design', 'Retail analytics', 'Business insight'],
     featured: false,
+    evidence: {
+      reports: [
+        { label: 'Full coursework report (PDF)', file: '/evidence/tableau/report.pdf' },
+      ],
+      images: [
+        { src: '/evidence/tableau/dashboard-1.png', caption: 'Main KPI dashboard' },
+        { src: '/evidence/tableau/dashboard-2.png', caption: 'Revenue per store breakdown' },
+      ],
+    },
   },
   {
     id: 'starbucks',
     title: 'VASP-N Consultancy — Starbucks big data engagement',
     category: 'big',
     categoryLabel: 'Big Data',
-    module: 'BUSI4372 · Leading Big Data Business Projects',
+    module: 'Leading Big Data Business Projects',
     date: 'May 2026',
     description:
       'Senior Data Scientist in a 5-person consultancy delivering a big data strategy and segmentation proposal for Starbucks across 14 structured team meetings.',
@@ -172,6 +236,14 @@ export const projects = [
     ],
     tags: ['Big data strategy', 'Project management', 'Data ethics', 'Consultancy'],
     featured: false,
+    evidence: {
+      reports: [
+        { label: 'Full coursework report (PDF)', file: '/evidence/starbucks/report.pdf' },
+      ],
+      images: [
+        { src: '/evidence/starbucks/chart-1.png', caption: 'Project Gantt chart' },
+      ],
+    },
   },
 ];
 

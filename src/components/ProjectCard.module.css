@@ -10,6 +10,7 @@
   animation: fadeUp 0.5s ease both;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card::before {
@@ -121,53 +122,6 @@
   white-space: nowrap;
 }
 
-/* Toggle button */
-.toggleBtn {
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  padding: 5px 12px;
-  cursor: pointer;
-  letter-spacing: 0.05em;
-  text-align: left;
-  transition: border-color 0.2s, color 0.2s;
-  width: fit-content;
-}
-
-.toggleBtn:hover {
-  border-color: var(--accent-border);
-  color: var(--accent);
-}
-
-/* Highlights */
-.highlights {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  animation: fadeUp 0.3s ease;
-}
-
-.highlight {
-  font-size: 13px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  padding-left: 18px;
-  position: relative;
-}
-
-.highlight::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-size: 11px;
-  top: 2px;
-}
-
 /* Tags */
 .tags {
   display: flex;
@@ -191,4 +145,19 @@
 .tag:hover {
   color: var(--text-secondary);
   border-color: var(--border-hover);
+}
+
+/* View full project CTA */
+.viewBtn {
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  transition: color 0.2s;
+  width: fit-content;
+}
+
+.card:hover .viewBtn {
+  color: var(--accent);
 }

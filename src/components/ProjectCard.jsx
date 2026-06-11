@@ -1,14 +1,23 @@
-import { useState } from 'react';
 import CategoryBadge from './CategoryBadge';
 import styles from './ProjectCard.module.css';
 
-export default function ProjectCard({ project, delay = 0 }) {
-  const [expanded, setExpanded] = useState(false);
+export default function ProjectCard({ project, delay = 0, onOpen }) {
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onOpen(project);
+    }
+  };
 
   return (
     <article
       className={`${styles.card} ${project.featured ? styles.featured : ''}`}
       style={{ animationDelay: `${delay}s` }}
+      onClick={() => onOpen(project)}
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      role="button"
+      aria-label={`Open full details for ${project.title}`}
     >
       {/* Header */}
       <div className={styles.head}>
@@ -36,29 +45,15 @@ export default function ProjectCard({ project, delay = 0 }) {
         ))}
       </div>
 
-      {/* Expandable highlights */}
-      <button
-        className={styles.toggleBtn}
-        onClick={() => setExpanded((v) => !v)}
-        aria-expanded={expanded}
-      >
-        {expanded ? 'Hide details ↑' : 'Show details ↓'}
-      </button>
-
-      {expanded && (
-        <ul className={styles.highlights}>
-          {project.highlights.map((h, i) => (
-            <li key={i} className={styles.highlight}>{h}</li>
-          ))}
-        </ul>
-      )}
-
       {/* Tags */}
       <div className={styles.tags}>
         {project.tags.map((tag) => (
           <span key={tag} className={styles.tag}>{tag}</span>
         ))}
       </div>
+
+      {/* Open-modal CTA */}
+      <span className={styles.viewBtn}>View full project →</span>
     </article>
   );
 }

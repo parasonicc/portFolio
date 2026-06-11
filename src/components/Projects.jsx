@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 import { projects, filterOptions } from '../data/projects';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from './Projects.module.css';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all');
+  const [selectedProject, setSelectedProject] = useState(null);
   const { ref, isVisible } = useScrollAnimation();
 
   const filtered = projects.filter(
@@ -49,6 +51,7 @@ export default function Projects() {
               key={project.id}
               project={project}
               delay={i * 0.07}
+              onOpen={setSelectedProject}
             />
           ))}
         </div>
@@ -57,6 +60,14 @@ export default function Projects() {
           <p className={styles.empty}>No projects in this category yet.</p>
         )}
       </div>
+
+      {/* Project detail modal */}
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 }
