@@ -1,11 +1,10 @@
 export const personalInfo = {
   name: 'Paras Yadav',
-  title: 'Business Analyst & ML Engineer',
+  title: 'Business Analyst',
   subtitle: 'MSc Business Analytics · University of Nottingham',
-  bio: "I build machine learning systems and analytics pipelines that turn messy business data into decisions. From churn models catching 5 in 6 at-risk customers, to NLP pipelines tracking brand sentiment across social networks — I focus on work that's rigorous, reproducible, and grounded in real business context.",
+  bio: "I build data-driven solutions that turn complex datasets into actionable business insights. My experience includes predictive modelling, customer analytics, NLP, and business intelligence, with projects spanning churn prediction, customer segmentation, and social media analytics. I am passionate about using data to solve real-world business problems and create measurable impact.",
   location: 'Nottingham, UK',
   email: 'yadavparas.28py@gmail.com',
-  phone: '07887150165',
   linkedin: 'https://www.linkedin.com/in/parasyadav28/',
   github: 'https://github.com/parasyadav28',
   initials: 'PY',

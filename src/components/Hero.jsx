@@ -1,4 +1,4 @@
-import { personalInfo, stats } from '../data/projects';
+import { personalInfo } from '../data/projects';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -16,11 +16,8 @@ export default function Hero() {
             {personalInfo.subtitle}
           </p>
 
-          {/* Name */}
-          <h1 className={styles.name}>
-            {personalInfo.name.split(' ')[0]}{' '}
-            <em className={styles.nameItalic}>{personalInfo.name.split(' ')[1]}</em>
-          </h1>
+          {/* Name — single colour, no italic accent */}
+          <h1 className={styles.name}>{personalInfo.name}</h1>
 
           {/* Title line */}
           <div className={styles.titleLine}>
@@ -56,23 +53,13 @@ export default function Hero() {
 
         {/* Avatar */}
         <div className={styles.avatarWrap}>
-      <div className={styles.avatarRing} aria-hidden />
-      <img
-       src="/paras.JPG"
-       alt="Paras Yadav"
-       className={styles.avatar}
-           />
-      </div>
-      </div>
-
-      {/* Stats */}
-      <div className={styles.statsRow}>
-        {stats.map(({ value, label }, i) => (
-          <div key={label} className={styles.stat} style={{ animationDelay: `${0.1 + i * 0.1}s` }}>
-            <span className={styles.statValue}>{value}</span>
-            <span className={styles.statLabel}>{label}</span>
-          </div>
-        ))}
+          <div className={styles.avatarRing} aria-hidden />
+          <img
+            src="/paras.JPG"
+            alt="Paras Yadav"
+            className={styles.avatar}
+          />
+        </div>
       </div>
     </section>
   );

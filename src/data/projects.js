@@ -1,11 +1,10 @@
 export const personalInfo = {
   name: 'Paras Yadav',
-  title: 'Business Analyst & ML Engineer',
+  title: 'Business Analyst',
   subtitle: 'MSc Business Analytics · University of Nottingham',
-  bio: "I build machine learning systems and analytics pipelines that turn messy business data into decisions. From churn models catching 5 in 6 at-risk customers, to NLP pipelines tracking brand sentiment across social networks — I focus on work that's rigorous, reproducible, and grounded in real business context.",
+  bio: "I build data-driven solutions that turn complex datasets into actionable business insights. My experience includes predictive modelling, customer analytics, NLP, and business intelligence, with projects spanning churn prediction, customer segmentation, and social media analytics. I am passionate about using data to solve real-world business problems and create measurable impact.",
   location: 'Nottingham, UK',
   email: 'yadavparas.28py@gmail.com',
-  phone: '07887150165',
   linkedin: 'https://www.linkedin.com/in/parasyadav28/',
   github: 'https://github.com/parasyadav28',
   initials: 'PY',
@@ -88,7 +87,7 @@ export const projects = [
       approach: [
         'Built a temporal labelling framework: 18 prediction reference dates between Oct 2020 and Feb 2022, producing 26,454 labelled customer-date observations — each a snapshot of the previous 90 days of shopping behaviour',
         'Engineered 18 behavioural features covering recency, visit frequency across multiple time windows, spend, basket diversity, preferred-store usage, and recent trend changes in activity',
-        'Used a strict out-of-time validation design that mirrors real deployment — information from future dates never leaked into model training',
+        'Used a strict out-of-time validation design that mirrors real deployment information from future dates never leaked into model training',
         'Benchmarked four approaches (Logistic Regression, Random Forest, AdaBoost, calibrated Linear SVM) and tuned the winner: a Random Forest with 200 trees, max depth 6',
       ],
       results: [
@@ -159,9 +158,9 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/segmentation/chart-1.png', caption: 'PCA explained variance' },
-        { src: '/evidence/segmentation/chart-2.png', caption: 'Cluster visualisation in PCA space' },
-        { src: '/evidence/segmentation/chart-3.png', caption: 'Segment profiles — size & spend' },
+        { src: '/evidence/segmentation/PCAvariance.png', caption: 'PCA explained variance' },
+        { src: '/evidence/segmentation/Clustering.png', caption: 'Cluster visualisation in PCA space' },
+        { src: '/evidence/segmentation/corr.png', caption: 'Feature correlation matrix' },
       ],
     },
   },
@@ -209,8 +208,9 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/bank/chart-1.png', caption: 'Model comparison — accuracy vs F1' },
-        { src: '/evidence/bank/chart-2.png', caption: 'Confusion matrix — Random Forest' },
+        { src: '/evidence/bank/compMatrix.png', caption: 'Model comparison — accuracy vs F1' },
+        { src: '/evidence/bank/RFmatrix.png', caption: 'Confusion matrix — Random Forest' },
+        { src: '/evidence/bank/DecTree.png', caption: 'Decision Tree' },
       ],
     },
   },
