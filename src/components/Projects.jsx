@@ -61,7 +61,7 @@ export default function Projects() {
         )}
       </div>
 
-      {/* Project detail modal — navigates within the current filter */}
+      {/* Project detail modal - navigates within the current filter */}
       {selectedProject && (
         <ProjectModal
           project={selectedProject}

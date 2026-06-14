@@ -1,4 +1,4 @@
-# Paras Yadav — Analytics Portfolio (React)
+# Paras Yadav - Analytics Portfolio (React)
 
 A production-ready portfolio website built with React and CSS Modules.  
 Dark editorial aesthetic with amber/gold accents, Playfair Display serif typography, and smooth scroll animations.
@@ -43,11 +43,11 @@ Your portfolio will be live at `https://parasyadav28.github.io`
 ```
 paras-portfolio/
 ├── public/
-│   └── index.html              # HTML shell — Google Fonts loaded here
+│   └── index.html              # HTML shell - Google Fonts loaded here
 │
 ├── src/
 │   ├── index.js                # React entry point
-│   ├── App.js                  # Root component — assembles all sections
+│   ├── App.js                  # Root component - assembles all sections
 │   │
 │   ├── data/
 │   │   └── projects.js         # ⭐ ALL your content lives here
@@ -62,7 +62,7 @@ paras-portfolio/
 │   │   ├── Navbar.jsx          # Sticky nav with mobile hamburger menu
 │   │   ├── Navbar.module.css
 │   │   │
-│   │   ├── Hero.jsx            # Full-height intro — name, bio, stats bar
+│   │   ├── Hero.jsx            # Full-height intro - name, bio, stats bar
 │   │   ├── Hero.module.css
 │   │   │
 │   │   ├── Projects.jsx        # Filterable project grid
@@ -146,14 +146,14 @@ export const skills = [
 ## 🎨 Design System
 
 ### Fonts (loaded via Google Fonts in public/index.html)
-- **Display**: Playfair Display (serif) — headings, name, project titles
-- **Body**: Syne (sans-serif) — body text, navigation, labels
-- **Mono**: JetBrains Mono — tags, metadata, eyebrow labels, metrics
+- **Display**: Playfair Display (serif) - headings, name, project titles
+- **Body**: Syne (sans-serif) - body text, navigation, labels
+- **Mono**: JetBrains Mono - tags, metadata, eyebrow labels, metrics
 
 ### Colour Palette (CSS variables in globals.css)
 | Variable | Value | Usage |
 |---|---|---|
-| `--accent` | `#c9a84c` | Gold — active states, highlights, key values |
+| `--accent` | `#c9a84c` | Gold - active states, highlights, key values |
 | `--bg-primary` | `#0d0d0d` | Page background |
 | `--bg-card` | `#1a1a1a` | Card backgrounds |
 | `--text-primary` | `#f0ece4` | Main text |
@@ -181,7 +181,7 @@ To add a new category, add the CSS variables in `globals.css` and a rule in `Cat
 | `react-scripts` | 5.x | Build toolchain (CRA) |
 | `lucide-react` | 0.383 | Icons (available if needed) |
 
-No extra CSS frameworks, animation libraries, or UI kits — pure React + CSS Modules.
+No extra CSS frameworks, animation libraries, or UI kits - pure React + CSS Modules.
 
 ---
 

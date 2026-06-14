@@ -16,12 +16,12 @@ export default function Hero() {
             {personalInfo.subtitle}
           </p>
 
-          {/* Name — single colour, no italic accent */}
+          {/* Name - single colour, no italic accent */}
           <h1 className={styles.name}>{personalInfo.name}</h1>
 
           {/* Title line */}
           <div className={styles.titleLine}>
-            <span className={styles.titleDash} aria-hidden>—</span>
+            <span className={styles.titleDash} aria-hidden>-</span>
             <span className={styles.titleText}>{personalInfo.title}</span>
           </div>
 

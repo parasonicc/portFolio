@@ -2,7 +2,7 @@ import { skills } from '../data/projects';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import styles from './Skills.module.css';
 
-/* Official site / docs for each skill — opens in a new tab */
+/* Official site / docs for each skill - opens in a new tab */
 const skillLinks = {
   'Python': 'https://www.python.org/',
   'SQL': 'https://www.w3schools.com/sql/',
@@ -69,7 +69,7 @@ export default function Skills() {
         </div>
 
         <div className={styles.grid}>
-          {/* Skills — each tile opens the official site/docs */}
+          {/* Skills - each tile opens the official site/docs */}
           <div className={`${styles.block} ${isVisible ? 'fade-up' : ''}`} style={{ animationDelay: '0.1s' }}>
             <h3 className={styles.blockTitle}>Technical skills</h3>
             <div className={styles.skillsGrid}>
@@ -80,7 +80,7 @@ export default function Skills() {
                   target="_blank"
                   rel="noreferrer"
                   className={`${styles.skillCard} ${styles.skillLink}`}
-                  aria-label={`${name} — official site (opens in new tab)`}
+                  aria-label={`${name} - official site (opens in new tab)`}
                 >
                   <span className={styles.skillIcon} aria-hidden>{icon}</span>
                   <span className={styles.skillName}>{name}</span>
@@ -109,7 +109,7 @@ export default function Skills() {
               </div>
             </div>
 
-            {/* Certifications — each row links to its verification page */}
+            {/* Certifications - each row links to its verification page */}
             <div className={`${styles.block} ${isVisible ? 'fade-up' : ''}`} style={{ animationDelay: '0.2s' }}>
               <h3 className={styles.blockTitle}>Certifications</h3>
               <div className={styles.certs}>
@@ -120,7 +120,7 @@ export default function Skills() {
                     target="_blank"
                     rel="noreferrer"
                     className={`${styles.cert} ${styles.certLink}`}
-                    aria-label={`${name} — verify certificate (opens in new tab)`}
+                    aria-label={`${name} - verify certificate (opens in new tab)`}
                   >
                     <div className={styles.certLeft}>
                       <span className={styles.certName}>{name}</span>
@@ -128,7 +128,7 @@ export default function Skills() {
                     </div>
                     <span className={styles.certRight}>
                       <span className={styles.certDate}>{date}</span>
-                      <span className={styles.certVerify}>Verify ↗</span>
+                      <span className={styles.certVerify}></span>
                     </span>
                   </a>
                 ))}

@@ -81,7 +81,7 @@ export default function ProjectModal({ project, projects, onClose, onNavigate })
           </button>
         </div>
 
-        {/* Metrics strip — always visible */}
+        {/* Metrics strip - always visible */}
         <div className={styles.metrics}>
           {project.metrics.map(({ value, label }) => (
             <div key={label} className={styles.metric}>

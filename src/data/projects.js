@@ -3,7 +3,7 @@ export const personalInfo = {
   title: 'Business Analyst',
   subtitle: 'MSc Business Analytics · University of Nottingham',
   bio: "I build data-driven solutions that turn complex datasets into actionable business insights. My experience includes predictive modelling, customer analytics, NLP, and business intelligence, with projects spanning churn prediction, customer segmentation, and social media analytics. I am passionate about using data to solve real-world business problems and create measurable impact.",
-  location: 'Nottingham, UK',
+  location: 'United Kingdom',
   email: 'yadavparas.28py@gmail.com',
   linkedin: 'https://www.linkedin.com/in/parasyadav28/',
   github: 'https://github.com/parasyadav28',
@@ -60,18 +60,18 @@ export const skills = [
 export const projects = [
   {
     id: 'churn',
-    title: 'Customer churn prediction — FoodCorp',
+    title: 'Customer churn prediction - FoodCorp',
     category: 'ml',
     categoryLabel: 'Machine Learning',
     module: 'Machine Learning & Predictive Analytics',
     date: 'May 2026',
     description:
-      'A temporal Random Forest pipeline to flag supermarket customers at risk of silently disengaging — before they stop coming. Deployed at 28-day intervals against a live customer base.',
+      'A temporal Random Forest pipeline to flag supermarket customers at risk of silently disengaging - before they stop coming. Deployed at 28-day intervals against a live customer base.',
     highlights: [
       '26,454 customer-date observations across 18 temporal reference points (Oct 2020–Feb 2022)',
       '18 engineered features: recency, frequency windows, spend, basket diversity, trend signals',
-      'Strict out-of-time split — no data leakage between training and test periods',
-      '4 models benchmarked; RF selected: AUC 88.1%, recall 83.4% — catches 5 in 6 true churners',
+      'Strict out-of-time split - no data leakage between training and test periods',
+      '4 models benchmarked; RF selected: AUC 88.1%, recall 83.4% - catches 5 in 6 true churners',
     ],
     metrics: [
       { value: '88.1%', label: 'ROC-AUC' },
@@ -83,30 +83,30 @@ export const projects = [
     featured: true,
     detail: {
       brief:
-        "A large proportion of FoodCorp's supermarket customers stop returning without any warning — they don't complain or formally leave, they simply go quiet. Once a customer has fully disengaged, winning them back is far harder than keeping them. The task: build a machine learning system that flags customers likely to churn before it happens, so retention teams can intervene early. Churn was defined as no purchase in the 28 days following a prediction date — a threshold that aligns with a four-week marketing cycle and produced a meaningful ~31% churn rate.",
+        "A large proportion of FoodCorp's supermarket customers stop returning without any warning - they don't complain or formally leave, they simply go quiet. Once a customer has fully disengaged, winning them back is far harder than keeping them. The task: build a machine learning system that flags customers likely to churn before it happens, so retention teams can intervene early. Churn was defined as no purchase in the 28 days following a prediction date - a threshold that aligns with a four-week marketing cycle and produced a meaningful ~31% churn rate.",
       approach: [
-        'Built a temporal labelling framework: 18 prediction reference dates between Oct 2020 and Feb 2022, producing 26,454 labelled customer-date observations — each a snapshot of the previous 90 days of shopping behaviour',
+        'Built a temporal labelling framework: 18 prediction reference dates between Oct 2020 and Feb 2022, producing 26,454 labelled customer-date observations - each a snapshot of the previous 90 days of shopping behaviour',
         'Engineered 18 behavioural features covering recency, visit frequency across multiple time windows, spend, basket diversity, preferred-store usage, and recent trend changes in activity',
         'Used a strict out-of-time validation design that mirrors real deployment information from future dates never leaked into model training',
         'Benchmarked four approaches (Logistic Regression, Random Forest, AdaBoost, calibrated Linear SVM) and tuned the winner: a Random Forest with 200 trees, max depth 6',
       ],
       results: [
-        'ROC-AUC of 0.881 and churn recall of 83.4% on held-out test periods — the model catches roughly 5 in 6 customers who later churn',
+        'ROC-AUC of 0.881 and churn recall of 83.4% on held-out test periods - the model catches roughly 5 in 6 customers who later churn',
         'Performance stayed stable across all four test periods, suggesting it generalises over time rather than fitting one historical window',
         'Visit-frequency features account for 57% of total feature importance; churners visit 70–80% less often than loyal customers, and the decline is gradual, not sudden',
-        "The standout insight: churners are not low spenders. Their average basket (£16.34) almost matches retained customers' (£17.28) — they just stop showing up",
+        "The standout insight: churners are not low spenders. Their average basket (£16.34) almost matches retained customers' (£17.28) - they just stop showing up",
       ],
       recommendations: [
-        'Aim retention activity at visit frequency — comeback nudges and offers timed to a four-week campaign cycle — rather than trying to grow basket size',
+        'Aim retention activity at visit frequency - comeback nudges and offers timed to a four-week campaign cycle - rather than trying to grow basket size',
         'Re-score customers daily in production instead of at fixed 28-day intervals, so declining behaviour is caught earlier',
         "Explore a customer-relative churn definition: a weekly shopper turning monthly is already disengaging even if they haven't crossed the global threshold",
-        'Cap extreme transaction values in production — a single £20M erroneous receipt distorted one trend feature in this dataset',
+        'Cap extreme transaction values in production - a single £20M erroneous receipt distorted one trend feature in this dataset',
       ],
     },
     evidence: {
       images: [
-        { src: '/evidence/churn/ROC.png', caption: 'Model benchmarking — ROC curves' },
-        { src: '/evidence/churn/featureimp.png', caption: 'Feature importance — visit frequency dominates' },
+        { src: '/evidence/churn/ROC.png', caption: 'Model benchmarking - ROC curves' },
+        { src: '/evidence/churn/featureimp.png', caption: 'Feature importance - visit frequency dominates' },
         { src: '/evidence/churn/churnVSnonchurn.png', caption: 'Churner vs loyal customer behaviour' },
       ],
     },
@@ -122,7 +122,7 @@ export const projects = [
       'Segmented 3,000 retail customers into 5 behavioural archetypes using RFM + category-spend features, enabling precision-targeted marketing campaigns.',
     highlights: [
       '27 engineered features: RFM metrics, basket behaviour, 20-category spend shares',
-      'PCA dimensionality reduction — 9 components retaining ~85% variance',
+      'PCA dimensionality reduction - 9 components retaining ~85% variance',
       'K-Means clustering → 5 named segments validated by silhouette score',
       'Family Bulk Buyers & Regular Shoppers identified as most profitable segments',
     ],
@@ -136,23 +136,23 @@ export const projects = [
     featured: true,
     detail: {
       brief:
-        'A retail firm wanted to move away from one-size-fits-all marketing and instead target groups of customers who genuinely shop alike. Using six months of transaction data for 3,000 customers — basket composition, item quantities, product categories, and visit frequency — the task was to discover natural behavioural segments and translate them into marketing strategy.',
+        'A retail firm wanted to move away from one-size-fits-all marketing and instead target groups of customers who genuinely shop alike. Using six months of transaction data for 3,000 customers - basket composition, item quantities, product categories, and visit frequency - the task was to discover natural behavioural segments and translate them into marketing strategy.',
       approach: [
         'Engineered 27 behavioural features across four dimensions: RFM (recency, frequency, monetary), basket behaviour, and spend shares across 20 product categories',
         'Applied log transformation and robust scaling to tame heavily skewed spending distributions and outliers',
-        'Reduced dimensionality with PCA — 9 principal components retaining roughly 85% of variance',
+        'Reduced dimensionality with PCA - 9 principal components retaining roughly 85% of variance',
         'Ran K-Means clustering, selecting k = 5 via silhouette score (~0.35), then profiled and named each cluster from its purchasing habits',
       ],
       results: [
         'Five distinct archetypes emerged: Convenience Purchasers (9%), Regular Shoppers (7%), Lottery-Focused Customers (1.5%), Family Bulk Buyers (74%), and Seasonal Shoppers (8.6%)',
-        'Family Bulk Buyers dominate the customer base — large multi-category baskets driving the bulk of revenue',
+        'Family Bulk Buyers dominate the customer base - large multi-category baskets driving the bulk of revenue',
         'Regular Shoppers are the most engaged group, visiting most frequently and showing the strongest loyalty signals',
         'Together these two segments were identified as the most commercially valuable on basket size, frequency, and total revenue contribution',
       ],
       recommendations: [
         'Target Regular Shoppers with loyalty schemes and personalised offers on frequently bought products to grow customer lifetime value',
         'Offer Family Bulk Buyers bundled deals and bulk-purchase schemes that play to their multi-category shopping style',
-        'Replace blanket campaigns with segment-specific messaging — the behavioural diversity makes a strong business case for it',
+        'Replace blanket campaigns with segment-specific messaging - the behavioural diversity makes a strong business case for it',
         'Extend the analysis with time-based shopping patterns and demographic data to sharpen the segments further',
       ],
     },
@@ -174,10 +174,10 @@ export const projects = [
     description:
       'Predicted product subscription likelihood on a heavily imbalanced 4,000-record bank dataset, selecting the model that best surfaces genuine potential subscribers over noise.',
     highlights: [
-      '80/20 class imbalance — F1-score chosen over accuracy as success metric',
+      '80/20 class imbalance - F1-score chosen over accuracy as success metric',
       'Call duration excluded from training to prevent data leakage in deployment',
       '4 classifiers compared: LR, Decision Tree, kNN, Random Forest',
-      'Random Forest: 0.85 accuracy, F1 0.49 — highest minority-class detection',
+      'Random Forest: 0.85 accuracy, F1 0.49 - highest minority-class detection',
     ],
     metrics: [
       { value: '0.85', label: 'Accuracy' },
@@ -188,10 +188,10 @@ export const projects = [
     featured: false,
     detail: {
       brief:
-        "A bank's outbound marketing campaigns reach thousands of customers, but only a small fraction ever subscribe to the promoted product. With a 4,000-record campaign dataset where roughly 80% of customers said no, the task was to build a classifier that identifies the customers genuinely likely to subscribe — so call time is spent where it counts.",
+        "A bank's outbound marketing campaigns reach thousands of customers, but only a small fraction ever subscribe to the promoted product. With a 4,000-record campaign dataset where roughly 80% of customers said no, the task was to build a classifier that identifies the customers genuinely likely to subscribe - so call time is spent where it counts.",
       approach: [
         'Explored and preprocessed the campaign dataset, handling categorical encoding and the severe 80/20 class imbalance',
-        'Deliberately excluded call duration from training — it is only known after a call ends, so using it would leak future information into a model meant to run before calls are made',
+        'Deliberately excluded call duration from training - it is only known after a call ends, so using it would leak future information into a model meant to run before calls are made',
         'Chose F1-score over raw accuracy as the success metric, since a model predicting "no" for everyone would already score 80% accuracy while being useless',
         'Trained and compared four classifiers: Logistic Regression, Decision Tree, k-Nearest Neighbours, and Random Forest',
       ],
@@ -208,8 +208,8 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/bank/compMatrix.png', caption: 'Model comparison — accuracy vs F1' },
-        { src: '/evidence/bank/RFmatrix.png', caption: 'Confusion matrix — Random Forest' },
+        { src: '/evidence/bank/compMatrix.png', caption: 'Model comparison - accuracy vs F1' },
+        { src: '/evidence/bank/RFmatrix.png', caption: 'Confusion matrix - Random Forest' },
         { src: '/evidence/bank/DecTree.png', caption: 'Decision Tree' },
       ],
     },
@@ -222,7 +222,7 @@ export const projects = [
     module: 'Analytics Specialisations & Applications',
     date: 'Mar 2026',
     description:
-      'End-to-end social listening pipeline for KantarIQ — from API collection to dual-engine sentiment, topic modelling, consumer perceptual mapping, and network-based influencer scoring.',
+      'End-to-end social listening pipeline for KantarIQ - from API collection to dual-engine sentiment, topic modelling, consumer perceptual mapping, and network-based influencer scoring.',
     highlights: [
       '26,265 posts collected via BlueSky API → 3,368 clean working dataset (1,240 authors)',
       'TextBlob + VADER composite sentiment; LDA (k=4) + BERTopic topic modelling',
@@ -238,20 +238,20 @@ export const projects = [
     featured: true,
     detail: {
       brief:
-        'Market research firm KantarIQ commissioned a pilot study to map how the public discusses two rival low-cost European airlines — Ryanair and Wizz Air — on the BlueSky social network. The deliverables: how much each brand is talked about, in what tone, around which themes, by which audiences, and which micro-influencers each brand should consider engaging.',
+        'Market research firm KantarIQ commissioned a pilot study to map how the public discusses two rival low-cost European airlines - Ryanair and Wizz Air - on the BlueSky social network. The deliverables: how much each brand is talked about, in what tone, around which themes, by which audiences, and which micro-influencers each brand should consider engaging.',
       approach: [
-        'Collected 26,265 raw posts via paginated calls to the BlueSky search API — five search terms per brand, cursor-based pagination with rate-limit handling',
+        'Collected 26,265 raw posts via paginated calls to the BlueSky search API - five search terms per brand, cursor-based pagination with rate-limit handling',
         'Cleaned aggressively: deduplication, regex filtering of bot/bridge/tracker accounts, aviation-tracker removal, and per-brand balancing → a working dataset of 3,368 posts from 1,240 authors',
-        'Ran dual-engine sentiment (TextBlob + VADER composite) plus two topic models — LDA (k=4) and BERTopic — to surface discussion themes per brand',
+        'Ran dual-engine sentiment (TextBlob + VADER composite) plus two topic models - LDA (k=4) and BERTopic - to surface discussion themes per brand',
         'Built a TF-IDF/PCA perceptual map of brand positioning, segmented authors into 3 engagement tiers with KMeans, and scored micro-influencer candidates using bipartite-projection network centrality combined with posting frequency and sentiment',
       ],
       results: [
-        'Both airlines attract neutral-to-positive sentiment, with Wizz Air slightly ahead (+0.049) — but Ryanair posts earn over 3× the engagement (avg 4.94 likes vs 1.42)',
+        'Both airlines attract neutral-to-positive sentiment, with Wizz Air slightly ahead (+0.049) - but Ryanair posts earn over 3× the engagement (avg 4.94 likes vs 1.42)',
         "Topics split cleanly: Ryanair conversation centres on operations, pricing, and CEO Michael O'Leary; Wizz Air's on route development, its Abu Dhabi business, and competitive comparisons",
         'Network analysis surfaced credible micro-influencer candidates per brand after filtering out news outlets, official accounts, and bots',
       ],
       recommendations: [
-        'Ryanair: engage @garius.bsky.social (29,784 followers, composite score 0.446) — mid-sized reach with consistently positive brand-relevant posting',
+        'Ryanair: engage @garius.bsky.social (29,784 followers, composite score 0.446) - mid-sized reach with consistently positive brand-relevant posting',
         'Wizz Air: engage @margareterosali.bsky.social (composite score 0.538) to amplify the already-positive route-development narrative',
         "Ryanair should lean into its outsized engagement-per-post; Wizz Air should convert its sentiment edge into reach as BlueSky's user base grows",
       ],
@@ -275,7 +275,7 @@ export const projects = [
       'Multi-KPI Tableau dashboard analysing revenue, basket value, and customer behaviour across 4 retail stores. Individual analysis contributed to the group final investment recommendation.',
     highlights: [
       'KPIs: monthly revenue per store, avg basket value (£22–£59), revenue/active customer (up to £70)',
-      'Store 2 identified as dominant — highest revenue, basket value, and visit frequency',
+      'Store 2 identified as dominant - highest revenue, basket value, and visit frequency',
       'Department revenue share analysis ruled out product mix as performance driver',
       'Peak revenue £384K; recommended Store 2 for prioritised investment',
     ],
@@ -288,7 +288,7 @@ export const projects = [
     featured: false,
     detail: {
       brief:
-        'Four retail stores, one investment decision. Working from large-scale transactional data, the task was to design a Tableau dashboard that compares store performance across meaningful KPIs and feeds a clear, evidence-based recommendation on where the business should prioritise investment — my individual analysis contributing to the group verdict.',
+        'Four retail stores, one investment decision. Working from large-scale transactional data, the task was to design a Tableau dashboard that compares store performance across meaningful KPIs and feeds a clear, evidence-based recommendation on where the business should prioritise investment - my individual analysis contributing to the group verdict.',
       approach: [
         'Designed a focused KPI set: monthly revenue per store, average basket value, revenue per active customer, and visit frequency',
         'Built interactive Tableau dashboards comparing all four stores across each KPI over time',
@@ -296,12 +296,12 @@ export const projects = [
         'Synthesised the individual findings into the group investment recommendation',
       ],
       results: [
-        'Store 2 dominated every KPI — highest monthly revenue (peaking at £384K), highest basket value, and the most frequent customer visits',
+        'Store 2 dominated every KPI - highest monthly revenue (peaking at £384K), highest basket value, and the most frequent customer visits',
         'Average basket values ranged from £22 to £59 across stores; revenue per active customer reached roughly £70 at the top',
-        'Department revenue shares were broadly similar across stores — ruling out product mix and pointing to customer behaviour as the real performance driver',
+        'Department revenue shares were broadly similar across stores - ruling out product mix and pointing to customer behaviour as the real performance driver',
       ],
       recommendations: [
-        'Prioritise Store 2 for investment — it compounds advantages across revenue, basket value, and loyalty',
+        'Prioritise Store 2 for investment - it compounds advantages across revenue, basket value, and loyalty',
         'Study what drives Store 2 visit frequency (location, layout, service) and replicate it at underperforming stores',
         'Track basket value monthly at weaker stores as the leading indicator of whether interventions are working',
       ],
@@ -315,7 +315,7 @@ export const projects = [
   },
   {
     id: 'starbucks',
-    title: 'VASP-N Consultancy — Starbucks big data engagement',
+    title: 'VASP-N Consultancy - Starbucks big data engagement',
     category: 'big',
     categoryLabel: 'Big Data',
     module: 'Leading Big Data Business Projects',
@@ -335,28 +335,28 @@ export const projects = [
     featured: false,
     detail: {
       brief:
-        'As Senior Data Scientist in VASP-N, a five-person student consultancy, the engagement was to pitch a big data and customer segmentation strategy to Starbucks — delivered as a recorded client pitch after a fourteen-meeting project running from late January to early May, governed by a signed Collaborative Working Agreement and weekly Tuesday team meetings.',
+        'As Senior Data Scientist in VASP-N, a five-person student consultancy, the engagement was to pitch a big data and customer segmentation strategy to Starbucks - delivered as a recorded client pitch after a fourteen-meeting project running from late January to early May, governed by a signed Collaborative Working Agreement and weekly Tuesday team meetings.',
       approach: [
-        "Owned the company research stream — including digging through Starbucks' investor material, which surfaced the Lieberman quote that anchored the final pitch",
+        "Owned the company research stream - including digging through Starbucks' investor material, which surfaced the Lieberman quote that anchored the final pitch",
         "Designed the project Gantt chart around the team's work-package model: a waterfall backbone with quality gates, combined with short agile sprint cycles where the work suited it (following Wysocki's principle that method should match the work)",
         'Built the branding template used across the deck and co-developed the data ethics framework, reshaping it from a compliance checklist into a principle-led framework covering privacy, fairness, and governance (Cavoukian, 2009)',
-        "Navigated team dynamics through Tuckman's forming–storming–norming–performing stages — including the Meeting 4 'storming' debate over whether external review data met our evidence standards",
+        "Navigated team dynamics through Tuckman's forming–storming–norming–performing stages - including the Meeting 4 'storming' debate over whether external review data met our evidence standards",
       ],
       results: [
         'Delivered the full client pitch on schedule in early May after 14 structured meetings',
         'The hybrid waterfall–agile plan kept work packages on track with clear quality gates',
-        'The ethics framework matured significantly through team feedback — from checklist to principles backed by academic and real-world examples',
+        'The ethics framework matured significantly through team feedback - from checklist to principles backed by academic and real-world examples',
         'Honest self-evaluation using Gibbs (1988): strengths in research and visual presentation; growth areas in seeking feedback earlier and contributing more assertively in methodology debates',
       ],
       recommendations: [
-        'Design privacy and ethics in from day one rather than treating them as a late slide — exactly what Cavoukian argues',
+        'Design privacy and ethics in from day one rather than treating them as a late slide - exactly what Cavoukian argues',
         'Build the project plan off the critical path as soon as it is agreed, not a meeting later',
-        'Lock the visual brand template early — settling it at Meeting 10 cost the team rework',
+        'Lock the visual brand template early - settling it at Meeting 10 cost the team rework',
       ],
     },
     evidence: {
       images: [
-        { src: '/evidence/starbucks/gantt.png', caption: 'Project Gantt chart — waterfall + sprint hybrid' },
+        { src: '/evidence/starbucks/gantt.png', caption: 'Project Gantt chart - waterfall + sprint hybrid' },
       ],
     },
   },
@@ -371,9 +371,9 @@ export const publication = {
   description:
     'Survey-based study of 600+ youths (age 14–25), achieving a 95% response rate. Applied statistical methods improving data accuracy by 20%; visualisations enhanced insight clarity by 25%. Authored the full research paper and presented findings at a peer-reviewed international conference.',
  
-  // Shown when "Show more" is expanded — edit freely
+  // Shown when "Show more" is expanded - edit freely
   abstract:
-    'This study investigates how social media use shapes the behaviour, wellbeing, and academic performance of young people aged 13–25. Primary data was collected through a structured Google Forms survey distributed to 550 students, yielding 507 valid responses — a response rate of approximately 92.2%. Key findings reveal that 65.1% of respondents use social media primarily for entertainment, 47.1% report that social media has negatively affected their academic performance, and 65.5% say it has disrupted their sleep cycle. Additionally, 40.4% self-identify as addicted to social media, while 72.4% acknowledge gaining new skills through it. Results were analysed and presented through targeted graphical and diagrammatical visualisations, offering a comprehensive view of social media\'s impact across educational, social, and mental health dimensions.',
+    'This study investigates how social media use shapes the behaviour, wellbeing, and academic performance of young people aged 13–25. Primary data was collected through a structured Google Forms survey distributed to 550 students, yielding 507 valid responses - a response rate of approximately 92.2%. Key findings reveal that 65.1% of respondents use social media primarily for entertainment, 47.1% report that social media has negatively affected their academic performance, and 65.5% say it has disrupted their sleep cycle. Additionally, 40.4% self-identify as addicted to social media, while 72.4% acknowledge gaining new skills through it. Results were analysed and presented through targeted graphical and diagrammatical visualisations, offering a comprehensive view of social media\'s impact across educational, social, and mental health dimensions.',
  
   highlights: [
     'Designed and ran a structured survey targeting 550 youths aged 13–25, collecting 507 valid responses (~92.2% response rate)',
