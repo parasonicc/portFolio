@@ -47,7 +47,7 @@ export default function Navbar() {
               rel="noreferrer"
               className={styles.linkExternal}
             >
-              LinkedIn            </a>
+              LinkedIn          </a>
           </li>
         </ul>
 
