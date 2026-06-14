@@ -84,7 +84,7 @@ export default function Skills() {
                 >
                   <span className={styles.skillIcon} aria-hidden>{icon}</span>
                   <span className={styles.skillName}>{name}</span>
-                  <span className={styles.skillGo} aria-hidden>↗</span>
+                  <span className={styles.skillGo} aria-hidden></span>
                 </a>
               ))}
             </div>

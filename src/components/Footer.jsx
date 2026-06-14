@@ -18,10 +18,10 @@ export default function Footer() {
 
           <div className={styles.links}>
             <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className={styles.link}>
-              LinkedIn ↗
+              LinkedIn 
             </a>
             <a href={`mailto:${personalInfo.email}`} className={styles.link}>
-              Email ↗
+              Email
             </a>
             <a href={`tel:${personalInfo.phone}`} className={styles.link}>
               {personalInfo.phone}

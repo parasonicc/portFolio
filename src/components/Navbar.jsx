@@ -7,6 +7,7 @@ const navLinks = [
   { href: '#projects', label: 'Projects' },
   { href: '#research', label: 'Research' },
   { href: '#skills', label: 'Skills' },
+  { href: personalInfo.linkedin, label: 'LinkedIn' },
 ];
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               href={personalInfo.linkedin}
               target="_blank"
@@ -48,7 +49,7 @@ export default function Navbar() {
               className={styles.linkExternal}
             >
               LinkedIn          </a>
-          </li>
+          </li> */}
         </ul>
 
         <button
