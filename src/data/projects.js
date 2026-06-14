@@ -258,9 +258,9 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/bluesky/chart-1.png', caption: 'Sentiment over time — Ryanair vs Wizz Air' },
-        { src: '/evidence/bluesky/chart-2.png', caption: 'Perceptual map (TF-IDF / PCA)' },
-        { src: '/evidence/bluesky/chart-3.png', caption: 'Influencer network graph' },
+        { src: '/evidence/bluesky/sentimentComp.png', caption: 'Sentiment Composition by brand - Ryanair vs Wizz Air' },
+        { src: '/evidence/bluesky/PerceptualMap.png', caption: 'Perceptual map (TF-IDF / PCA)' },
+        { src: '/evidence/bluesky/RecomInflu.png', caption: 'Normalised Profile of Recommended Influencers ' },
       ],
     },
   },
@@ -308,8 +308,8 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/tableau/dashboard-1.png', caption: 'Main KPI dashboard' },
-        { src: '/evidence/tableau/dashboard-2.png', caption: 'Monthly revenue per store' },
+        { src: '/evidence/tableau/dash.png', caption: 'Main KPI dashboard' },
+        { src: '/evidence/tableau/MSR.png', caption: 'Monthly revenue per store' },
       ],
     },
   },
@@ -356,7 +356,7 @@ export const projects = [
     },
     evidence: {
       images: [
-        { src: '/evidence/starbucks/chart-1.png', caption: 'Project Gantt chart — waterfall + sprint hybrid' },
+        { src: '/evidence/starbucks/gantt.png', caption: 'Project Gantt chart — waterfall + sprint hybrid' },
       ],
     },
   },
