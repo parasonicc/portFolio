@@ -43,7 +43,7 @@ export default function Hero() {
               rel="noreferrer"
               className={styles.btnPrimary}
             >
-              LinkedIn Profile ↗
+              LinkedIn Profile
             </a>
             <a href={`mailto:${personalInfo.email}`} className={styles.btnOutline}>
               {personalInfo.email}
