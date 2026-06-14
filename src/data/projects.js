@@ -364,12 +364,33 @@ export const projects = [
 
 export const publication = {
   title: 'The Impacts of Social Media on Youth',
-  conference: '5th International Conference on ICT for Digital, Smart & Sustainable Development',
+  conference:
+    '5th International Conference on ICT for Digital, Smart & Sustainable Development',
   date: 'Jun 2025',
   institution: 'Maharaja Surajmal Institute, India',
   description:
     'Survey-based study of 600+ youths (age 14–25), achieving a 95% response rate. Applied statistical methods improving data accuracy by 20%; visualisations enhanced insight clarity by 25%. Authored the full research paper and presented findings at a peer-reviewed international conference.',
-  tags: ['Survey research', 'Statistical analysis', 'Data visualisation', 'Peer-reviewed', 'Conference paper'],
+ 
+  // Shown when "Show more" is expanded — edit freely
+  abstract:
+    'This study investigates how social media use shapes the behaviour, wellbeing, and academic performance of young people aged 13–25. Primary data was collected through a structured Google Forms survey distributed to 550 students, yielding 507 valid responses — a response rate of approximately 92.2%. Key findings reveal that 65.1% of respondents use social media primarily for entertainment, 47.1% report that social media has negatively affected their academic performance, and 65.5% say it has disrupted their sleep cycle. Additionally, 40.4% self-identify as addicted to social media, while 72.4% acknowledge gaining new skills through it. Results were analysed and presented through targeted graphical and diagrammatical visualisations, offering a comprehensive view of social media\'s impact across educational, social, and mental health dimensions.',
+ 
+  highlights: [
+    'Designed and ran a structured survey targeting 550 youths aged 13–25, collecting 507 valid responses (~92.2% response rate)',
+    'Found that 47.1% of respondents felt social media negatively impacted their academic performance, while 72.4% gained new skills through it',
+    'Identified that 65.5% of respondents experienced disrupted sleep cycles linked to social media use',
+    'Revealed that 40.4% of respondents self-reported social media addiction, with 51.8% finding it difficult to reduce usage',
+    'Analysed platform preferences, finding Instagram (46%) and YouTube (36.5%) as the most favoured platforms among youth',
+    'Presented findings through statistical visualisations across 11 thematic sections at a peer-reviewed international conference',
+  ],
+ 
+  tags: [
+    'Survey research',
+    'Statistical analysis',
+    'Data visualisation',
+    'Peer-reviewed',
+    'Conference paper',
+  ],
 };
 
 export const filterOptions = [
