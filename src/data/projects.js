@@ -159,7 +159,7 @@ export const projects = [
     evidence: {
       images: [
         { src: '/evidence/segmentation/PCAvariance.png', caption: 'PCA explained variance' },
-        { src: '/evidence/segmentation/Clustering.png', caption: 'Cluster visualisation in PCA space' },
+        { src: '/evidence/segmentation/clustering.png', caption: 'Cluster visualisation in PCA space' },
         { src: '/evidence/segmentation/corr.png', caption: 'Feature correlation matrix' },
       ],
     },
