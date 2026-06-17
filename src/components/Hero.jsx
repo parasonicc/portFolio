@@ -16,12 +16,12 @@ export default function Hero() {
             {personalInfo.subtitle}
           </p>
 
-          {/* Name - single colour, no italic accent */}
+          {/* Name — single colour, no italic accent */}
           <h1 className={styles.name}>{personalInfo.name}</h1>
 
           {/* Title line */}
           <div className={styles.titleLine}>
-            <span className={styles.titleDash} aria-hidden>-</span>
+            <span className={styles.titleDash} aria-hidden>—</span>
             <span className={styles.titleText}>{personalInfo.title}</span>
           </div>
 
@@ -43,10 +43,17 @@ export default function Hero() {
               rel="noreferrer"
               className={styles.btnPrimary}
             >
-              LinkedIn Profile
+              LinkedIn Profile 
             </a>
             <a href={`mailto:${personalInfo.email}`} className={styles.btnOutline}>
               {personalInfo.email}
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Paras_Yadav_Resume.pdf"
+              className={styles.btnResume}
+            >
+              ↓ Resume
             </a>
           </div>
         </div>
