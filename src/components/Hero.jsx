@@ -43,7 +43,7 @@ export default function Hero() {
               rel="noreferrer"
               className={styles.btnPrimary}
             >
-              LinkedIn Profile 
+              LinkedIn Profile
             </a>
             <a href={`mailto:${personalInfo.email}`} className={styles.btnOutline}>
               {personalInfo.email}
@@ -53,7 +53,7 @@ export default function Hero() {
               download="Paras_Yadav_Resume.pdf"
               className={styles.btnResume}
             >
-              ↓ Resume
+              DownloadResume
             </a>
           </div>
         </div>
