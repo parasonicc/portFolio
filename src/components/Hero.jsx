@@ -53,7 +53,7 @@ export default function Hero() {
               download="Paras_Yadav_Resume.pdf"
               className={styles.btnResume}
             >
-              DownloadResume
+              Download Resume
             </a>
           </div>
         </div>
